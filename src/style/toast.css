@@ -1,0 +1,24 @@
+/* トースト通知 */
+.toast {
+	position: fixed;
+	bottom: -60px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: var(--accent-color);
+	color: white;
+	padding: 0.75rem 1.5rem;
+	border-radius: 9999px;
+	font-weight: bold;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+	transition: bottom 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	z-index: 1000;
+	pointer-events: none;
+}
+
+.toast.show {
+	bottom: 30px;
+}
+
+.toast.error {
+	background-color: #ef4444;
+}
